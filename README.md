@@ -5,6 +5,7 @@ Get the latest version URL from Index
 ```shell
 ./get_latests.py [-s splitter] URL NAME.EXT
 ```
+
 ###Examples
 ```shell
 ./get_latests.py http://gstreamer.freedesktop.org/src/gst-plugins-base/
@@ -18,6 +19,11 @@ http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-0.9.7.tar
 ```
 
 ```shell
+./get_latests.py http://gstreamer.freedesktop.org/src/gst-plugins-base/ | xargs wget
+```
+
+```shell
 ./get_latests.py http://gstreamer.freedesktop.org/src/gst-plugins-base/ gst-plugins-base.tar.xz
 http://gstreamer.freedesktop.org/src/gst-plugins-base/gst-plugins-base-1.5.2.tar.xz
 ```
+
